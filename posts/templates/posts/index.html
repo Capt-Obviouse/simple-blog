@@ -1,0 +1,14 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+  <p>{{title}}</p>
+  {% for post in posts %}
+    <div style="background-color: #c0c0c0; padding: 2em 5em; margin: 2em 0;">
+      <p>
+          {{post.title}}
+      </p>
+      <p style="padding-top: 1em;">
+        {{post.body}}
+      </p>
+    </div>
+  {% endfor %}
+{% endblock%}
